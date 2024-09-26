@@ -1,2 +1,2 @@
-Flask
-Coverage
+Flask==3.0.2
+coverage==7.6.0
