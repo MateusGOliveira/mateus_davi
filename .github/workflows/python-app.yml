@@ -52,7 +52,7 @@ jobs:
       run: |
             echo "Conectando no EC2"
             echo "${{secrets.AWS_KEY_MATEUS_DAVI}}" > private_key && chmod 600 private_key 
-            ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-52-5-194-193.compute-1.amazonaws.com "
+            ssh -o StrictHostKeyChecking=no -i private_key ubuntu@ec2-44-207-9-141.compute-1.amazonaws.com "
                 cd mateus_davi/;git pull;./executar.sh"
  
 
